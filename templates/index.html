@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Hi I am {{student.name}}</h1>
+    <p>{{student.role}}</p>
+    <p>{{student.bio}}</p>
+</section>
+<section class="skills_container">
+    <h2>Skills</h2>
+    {% for skill in student.skill %}
+        <span>{{skill}}</span>
+    {% endfor %}
+</section>
+{% endblock %}
