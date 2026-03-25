@@ -1,23 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="page-header">
+<section class="container py-5">
     <h1>Contact</h1>
     <p>Fell free to reach out to me.</p>
+    <span>Email:<p><a href="mailto:{{student.email}}" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.email}}</a></p></span>
+    <span>Github:<p><a href="{{student.github}}" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.github}}</a></p></span>
+    <form action="/submit" method="post" >
+        <div class="mb-3">
+            <label for="name" class="form-label" >Your name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="message" class="form-label">Your Message:</label>
+            <textarea type="text" name="message" id="message" placeholder="Enter Your message" rows="5" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark m-5">Submit message</button>
+    </form>
 </section>
-<section class="contact-section">
-    <p><a href="mailto:{{student.email}}">{{student.email}}</a></p>
-    <p><a href="{{student.github}}" target="_blank">{{student.github}}</a></p>
-</section>
-<form action="/contact/submit" method="post" >
-    <div class="form-group">
-        <label for="name" >Your name</label>
-        <input type="text" name="name" id="name" placeholder="Enter Your name" required>
-    </div>
-    <div class="form-group">
-        <label for="message" >Your Message</label>
-        <textarea type="text" name="message" id="message" placeholder="Enter Your message" rows="5"></textarea>
-    </div>
-    <button type="submit">Submit message</button>
-</form>
 {% endblock %}

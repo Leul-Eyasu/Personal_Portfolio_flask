@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request,redirect,url_for
 
 app = Flask(__name__)
 
@@ -14,7 +14,13 @@ student = {
         {
             "title":"Smart library Managment system",
             "description":"A console and GUI app that organize and accses book and store it in json file. ",
-            "tech":["pytyon","OOP","json","tkinter"],
+            "tech":["Python","OOP","json","tkinter"],
+            "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
+        },
+        {
+            "title":"Smart library Managment system",
+            "description":"A console and GUI app that organize and accses book and store it in json file. ",
+            "tech":["Python","OOP","json","tkinter"],
             "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
         }
     ]
@@ -31,7 +37,6 @@ def projects():
 @app.route("/contact")
 def contact():
     return render_template("contact.html",student=student)
-
 
 
 if __name__ == "__main__":
