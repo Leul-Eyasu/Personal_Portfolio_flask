@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="px-5 py-5 text-center">
-    <h1>Hi, I am {{student.name}}</h1>
-    <p>{{student.role}}</p>
-    <p>{{student.bio}}</p>
-    <h2>Skills</h2>
-    {% for skill in student.skill %}
-        <span class="btn btn-outline-secondary btn-sm">{{skill}}</span>
-    {% endfor %}
-</section>
+<div class="container">
+    <section class="px-5 py-5 text-left">
+        <h1>Hi, I am {{student.name}}</h1>
+        <p>{{student.role}}</p>
+        <p>{{student.bio}}</p>
+        <h2>Skills</h2>
+        {% for skill in student.skill %}
+            <span class="btn btn-outline-secondary btn-sm">{{skill}}</span>
+        {% endfor %}
+    </section>
+</div>
+
 {% endblock %}

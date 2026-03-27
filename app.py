@@ -23,6 +23,11 @@ student = {
             "tech":["Python","Flask","HTML","Bootstrap"],
             "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
         }
+    ],
+    "learning":[
+        "Web applications",
+        "Flask applications",
+        "CRUD applications"
     ]
 }
 
@@ -38,6 +43,9 @@ def projects():
 def contact():
     return render_template("contact.html",student=student)
 
+@app.route("/learning")
+def learning():
+    return render_template("learning.html",student=student)
 
 if __name__ == "__main__":
     app.run(debug=True)
