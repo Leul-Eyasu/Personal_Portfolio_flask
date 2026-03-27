@@ -7,7 +7,7 @@ student = {
     "age":18,
     "role":"Python Developer",
     "bio":"I am a high school student interested in learning python and other tech related thinhgs.",
-    "skill":["python","html","css"],
+    "skill":["python","flask","tkinter","git","github"],
     "email":"leulleul334@gamil.com",
     "github":"https://github.com/Leul-Eyasu",
     "projects":[
@@ -18,9 +18,9 @@ student = {
             "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
         },
         {
-            "title":"Smart library Managment system",
-            "description":"A console and GUI app that organize and accses book and store it in json file. ",
-            "tech":["Python","OOP","json","tkinter"],
+            "title":"Personal Portfolio",
+            "description":"A personal Portfolio of made using the Python Library flask and HTML and bootstarp.",
+            "tech":["Python","Flask","HTML","Bootstrap"],
             "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
         }
     ]
