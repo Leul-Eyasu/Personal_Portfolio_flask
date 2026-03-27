@@ -26,9 +26,12 @@
         {% block content%}
         {% endblock %}
     </main>
-    <footer class="d-flex justify-content-center">
+    <div class="container">
+        <footer class="d-flex justify-content-center border-top border-dark-subtle py-3">
         <p>&copy; 2026 {{student.name}}. <a href="{{student.github}}" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">github</a></p>
-    </footer>
+        </footer>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
