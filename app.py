@@ -4,10 +4,9 @@ app = Flask(__name__)
 
 student = {
     "name":"Leul",
-    "age":18,
     "role":"Python Developer",
-    "bio":"I am a high school student interested in learning python and other tech related thinhgs.",
-    "skill":["python","flask","tkinter","git","github"],
+    "bio":"I am a high school student and a python developer interested in learning python ,AI/ML and other tech related things.I alos like to learn and understand how the technologies around us work.",
+    "skill":["Python","flask","tkinter","git","HTML/CSS","Bootstrap"],
     "email":"leulleul334@gamil.com",
     "github":"https://github.com/Leul-Eyasu",
     "projects":[
@@ -21,7 +20,7 @@ student = {
             "title":"Personal Portfolio",
             "description":"A Simple personal Portfolio made using the Python Library flask and some HTML and bootstarp for styling it.",
             "tech":["Python","Flask","HTML","Bootstrap"],
-            "github":"https://github.com/Leul-Eyasu/Smart_Library_System"
+            "github":"https://github.com/Leul-Eyasu/Personal_Portfolio_flask"
         }
     ],
     "learning":[
@@ -29,7 +28,7 @@ student = {
         "Flask applications",
         "CRUD applications",
         "APIs and Live data",
-        "Data bases"
+        "Data bases",
         "Prompt Engineering"
     ]
 }
@@ -48,6 +47,7 @@ def contact():
 
 @app.route("/contact/submit",methods=["POST"])
 def submit():
+    #stores the submited form in the txt file
     if request.method == 'POST':
         name = request.form['name']
         message = request.form['message']
@@ -62,4 +62,4 @@ def learning():
     return render_template("learning.html",student=student)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
