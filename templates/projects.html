@@ -4,17 +4,17 @@
 <section class="container py-5">
     <h1>My Projects</h1>
     <p>Here are some project i have worked on:</p>
-    <div class="row">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-3 py-5">
         {% for project in student.projects %}
-        <div class="col-sm-6 mb-5 mb-sm-0">
-            <div class="card w-51 text-left bg-dark-subtle border-dark-subtle">
+        <div class="col">
+            <div class="card h-100 rounded-4 shadow-lg text-left bg-black text-light">
                 <div class="card-body">  
                     <h5 class="card-title">{{project.title}}</h5>
                     <p class="card-text">{{project.description}}</p>
                     {% for tech in project.tech %}
-                        <span class="btn btn-outline-secondary btn-sm">{{tech}}</span>
+                        <span class="btn btn-outline-light btn-sm rounded-3">{{tech}}</span>
                     {% endfor %}<br><br>
-                    <a href="{{project.github}}" target="_blank" class="btn btn-dark">View on github</a>  
+                    <a href="{{project.github}}" target="_blank" class="btn btn-light ">View on github</a>  
                 </div>
             </div>
         </div>
