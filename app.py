@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask,render_template,request
 
 app = Flask(__name__)
 
@@ -45,6 +45,17 @@ def projects():
 @app.route("/contact")
 def contact():
     return render_template("contact.html",student=student)
+
+@app.route("/contact/submit",methods=["POST"])
+def submit():
+    if request.method == 'POST':
+        name = request.form['name']
+        message = request.form['message']
+        with open('messages/messages.txt','a') as file:
+            file.write(f"Name:{name} sent message:{message}\n")
+        return render_template("submit.html",student=student)
+    return "Method not allowed."
+
 
 @app.route("/learning")
 def learning():
