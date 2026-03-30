@@ -1,5 +1,18 @@
 body{
     line-height: 25px;
+    background: linear-gradient(135deg ,#aeacac 0%, #d3d2d2 50%);
+}
+.navbar{
+    background: linear-gradient(135deg, #000000 0%, #212121 60%, #000000 60% );
+}
+.card{
+    background: linear-gradient(135deg, #000000 0%, #212121 70%);
+}
+#submit-btn{
+    background: linear-gradient(135deg, #000000 0%, #212121 70%);
+}
+#pop-text{
+    background: linear-gradient(135deg, #000000 0%, #212121 70%);
 }
 .nav-link{
     font-size: 1.1rem;
