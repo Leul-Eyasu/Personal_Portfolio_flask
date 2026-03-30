@@ -4,8 +4,12 @@
 <section class="container py-5">
     <h1>Contact</h1>
     <p>Fell free to reach out to me.</p>
-    <span>Email:<p><a href="mailto:{{student.email}}" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.email}}</a></p></span>
-    <span>Github:<p><a href="{{student.github}}" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.github}}</a></p></span>
+    <span>Email:<p>
+        <a href="mailto:{{student.email}}" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.email}}</a>
+    </p></span>
+    <span>Github:<p>
+        <a href="{{student.github}}" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{student.github}}</a>
+    </p></span>
     <h5 class="mt-4 mb-4">Leave me a message or comment:</h5>
     <form action="/contact/submit" method="post" >
         <div class="mb-3">
@@ -16,7 +20,7 @@
             <label for="message" class="form-label">Your Message:</label>
             <textarea type="text" name="message" id="message" placeholder="Enter Your message" rows="5" class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-dark m-5" id="submit-btn">Submit message</button>
+        <button type="submit" class="btn btn-dark m-5" id="color-grid">Submit message</button>
     </form>
 </section>
 {% endblock %}

@@ -1,19 +1,27 @@
 body{
+    font-family: 'Poppins',sans-serif;
     line-height: 25px;
-    background: linear-gradient(135deg ,#aeacac 0%, #d3d2d2 50%);
+    background: linear-gradient(135deg ,#aeacac 0%, #d3d2d2 100%);
+}
+h1,h2,h3{
+    font-family: 'Montserrat',sans-serif;
 }
 .navbar{
     background: linear-gradient(135deg, #000000 0%, #212121 60%, #000000 60% );
 }
+#color-grid{
+    background: linear-gradient(135deg, #000000 0%, #212121 70%);
+}
 .card{
-    background: linear-gradient(135deg, #000000 0%, #212121 70%);
-}
-#submit-btn{
-    background: linear-gradient(135deg, #000000 0%, #212121 70%);
-}
-#pop-text{
     background: linear-gradient(135deg, #000000 0%, #212121 70%);
 }
 .nav-link{
     font-size: 1.1rem;
+}
+i{
+    font-size: 28px;
+    color: #000000;
+}
+i:hover{
+    color: #8f8c8c;
 }
