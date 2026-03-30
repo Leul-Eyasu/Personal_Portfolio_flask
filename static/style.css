@@ -1,4 +1,6 @@
-
+body{
+    line-height: 25px;
+}
 .nav-link{
     font-size: 1.1rem;
 }
