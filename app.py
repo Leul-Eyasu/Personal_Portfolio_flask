@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect,url_for
 
 app = Flask(__name__)
 
@@ -56,7 +56,8 @@ def submit():
         with open('messages/messages.txt','a') as file:
             file.write(f"Name:{name} sent message:{message}\n")
         return render_template("submit.html",student=student)
-    return "Method not allowed."
+    else:
+        redirect(url_for("contact"))
 
 
 @app.route("/learning")
