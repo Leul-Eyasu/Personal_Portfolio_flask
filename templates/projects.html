@@ -6,8 +6,8 @@
     <p>Here are some project i have worked on:</p>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-3 py-5">
         {% for project in student.projects %}
-        <div class="col">
-            <div class="card h-100 rounded-4 shadow-lg text-left bg-black text-light">
+        <div class="col" >
+            <div class="card h-100 rounded-4 shadow-lg text-left bg-black text-light" id="pro-card">
                 <div class="card-body">  
                     <h5 class="card-title">{{project.title}}</h5>
                     <p class="card-text">{{project.description}}</p>

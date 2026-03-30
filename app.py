@@ -2,8 +2,10 @@ from flask import Flask,render_template,request
 
 app = Flask(__name__)
 
+
+
 student = {
-    "name":"Leul",
+    "name":"Leul Eyasu",
     "role":"Python Developer",
     "bio":"I am a high school student and a python developer interested in learning python ,AI/ML and other tech related things.I alos like to learn and understand how the technologies around us work.",
     "skill":["Python","flask","tkinter","git","HTML/CSS","Bootstrap"],
